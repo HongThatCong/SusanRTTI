@@ -1,4 +1,6 @@
-# SusanRTTI #
+# SusanRTTI for IDA 7.0+ #
+# https://www.nccgroup.com/us/about-us/newsroom-and-events/blog/2017/october/python-class-informer-an-idapython-plugin-for-viewing-run-time-type-information-rtti/
+# https://github.com/nccgroup/SusanRTTI
 #### Another RTTI Parsing IDA plugin ####
 
 ### Features ###

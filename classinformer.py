@@ -3,14 +3,15 @@
 # Tyler Colgan / NCC Group
 # 03/2017
 
+# pylint: disable=C0103
+
 import idaapi
-from idc import *
-from idc_bc695 import *
 
 idaapi.require("utils")
 idaapi.require("msvc")
 idaapi.require("gcc")
 idaapi.require("classdiagram")
+
 from idaapi import autoIsOk
 from msvc import run_msvc
 from gcc import run_gcc
@@ -30,8 +31,9 @@ def main():
         classes = run_gcc() if isGcc() else run_msvc()
         print(classes)
         show_classes(classes)
-    else:
+        else:
         print("Take it easy, man")
+
     print("Done")
 
 if __name__ == '__main__':
